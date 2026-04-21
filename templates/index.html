@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>豆瓣电影Top250</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+
+  <!-- Favicons 网站图标（Favicon） -->
+  <link href="static/assets/img/favicon.png" rel="icon">
+  <link href="static/assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts 引入外部字体（Google Fonts）-->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files 引入第三方样式库（Bootstrap 模板）-->
+  <link href="static/assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="static/assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="static/assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="static/assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="static/assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="static/assets/css/main.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: Mamba
+  * Template URL: https://bootstrapmade.com/mamba-one-page-bootstrap-template-free/
+  * Updated: Aug 07 2024 with Bootstrap v5.3.3
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body class="index-page">
+
+  <header id="header" class="header sticky-top">
+
+
+    <div class="branding d-flex align-items-cente">
+
+      <div class="container position-relative d-flex align-items-center justify-content-between">
+        <a href="temp.html" class="logo d-flex align-items-center">
+          <!-- Uncomment the line below if you also wish to use an image logo -->
+          <!-- <img src="static/assets/img/logo.png" alt=""> -->
+          <h1 class="sitename">Mamba</h1>
+        </a>
+
+        <nav id="navmenu" class="navmenu">
+          <ul>
+            <li><a href="/index" class="active">首页</a></li>
+            <li><a href="/movie">电影</a></li>
+            <li><a href="/score">评分</a></li>
+            <li><a href="/word">词云</a></li>
+            <li><a href="/team">团队</a></li>
+          </ul>
+          <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+        </nav>
+
+      </div>
+
+    </div>
+
+  </header>
+
+  <main class="main">
+
+      <!-- About Section -->
+    <section id="about" class="about section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>豆瓣电影Top250数据分析</h2>
+        <p>应用python爬虫、Flask框架、Echarts、WorldCloud等技术实现</p>
+      </div><!-- End Section Title -->
+
+    <section id="stats" class="stats section light-background">
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-3 col-md-6 d-flex flex-column align-items-center">
+
+
+                <div class="stats-item">
+                    <a href="/movie">
+                        <i class="bi bi-film" style="font-size:42px; color:#6366f1; text-shadow:0 0 12px rgba(99,102,241,0.4); margin-bottom:15px;"></i>
+                      <span data-purecounter-start="0" data-purecounter-end="250" data-purecounter-duration="1" class="purecounter"></span>
+                      <p>经典电影</p>
+                    </a>
+                </div>
+
+          </div><!-- End Stats Item -->
+
+          <div class="col-lg-3 col-md-6 d-flex flex-column align-items-center">
+
+
+                <div class="stats-item">
+                    <a href="/score">
+                       <i class="bi bi-bar-chart-line" style="font-size:42px; color:#8b5cf6; text-shadow:0 0 12px rgba(139,92,246,0.4); margin-bottom:15px;"></i>
+                      <span data-purecounter-start="0" data-purecounter-end="1" data-purecounter-duration="1" class="purecounter"></span>
+                      <p>评分统计</p>
+                   </a>
+                </div>
+
+          </div><!-- End Stats Item -->
+
+          <div class="col-lg-3 col-md-6 d-flex flex-column align-items-center">
+
+                <div class="stats-item">
+                   <a href="/word">
+                         <i class="bi bi-card-list" style="font-size:42px; color:#7c3aed; text-shadow:0 0 12px rgba(124,58,237,0.4); margin-bottom:15px;"></i>
+                      <span data-purecounter-start="0" data-purecounter-end="2194" data-purecounter-duration="1" class="purecounter"></span>
+                      <p>词汇统计</p>
+                   </a>
+                </div>
+
+          </div><!-- End Stats Item -->
+
+          <div class="col-lg-3 col-md-6 d-flex flex-column align-items-center">
+             <div class="stats-item">
+               <a href="/team">
+                    <i class="bi bi-people" style="font-size:42px; color:#4f46e5; text-shadow:0 0 12px rgba(79,70,229,0.4); margin-bottom:15px;"></i>
+                    <span data-purecounter-start="0" data-purecounter-end="5" data-purecounter-duration="1" class="purecounter"></span>
+                    <p>团队成员</p>
+               </a>
+             </div>
+
+          </div><!-- End Stats Item -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Stats Section -->
+
+    </section><!-- /About Section -->
+
+
+  </main>
+
+  <footer id="footer" class="footer light-background">
+
+
+    <div class="container copyright text-center mt-4">
+      <p>© <span>Copyright</span> <strong class="px-1 sitename">Mamba</strong> <span>All Rights Reserved</span></p>
+      <div class="credits">
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you've purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
+        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a> | <a href="https://bootstrapmade.com/tools/">DevTools</a>
+      </div>
+    </div>
+
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="static/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="static/assets/vendor/php-email-form/validate.js"></script>
+  <script src="static/assets/vendor/aos/aos.js"></script>
+  <script src="static/assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="static/assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="static/assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="static/assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="static/assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="static/assets/js/main.js"></script>
+
+</body>
+
+</html>
