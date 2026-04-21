@@ -1,0 +1,2 @@
+# python-spider-douban_to_SQLite
+这是一个练习项目，记录使用Python如何使用正则表达式、BeautifulSoup等实现从豆瓣爬取经典top250电影，存储在xls和SQLite
